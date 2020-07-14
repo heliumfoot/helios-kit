@@ -4,10 +4,17 @@
 @_exported import JavaCoder
 @_exported import AnyCodable
 
-public struct Helios {
-	public static func bootstrap(cachePath: String) {
-		 setenv("TMPDIR", cachePath, 1)
-		 // Required for SSL to work
-		 setenv("URLSessionCertificateAuthorityInfoFile", cachePath + "/cacert.pem", 1)
+var AndroidPackage: String = ""
+
+public protocol Bootable {
+	static func boot(packageName: String, cachePath: String)
+}
+
+public extension Bootable {
+	public static func boot(packageName: String, cachePath: String) {
+		AndroidPackage = packageName
+		setenv("TMPDIR", cachePath, 1)
+		// Required for SSL to work
+		setenv("URLSessionCertificateAuthorityInfoFile", cachePath + "/cacert.pem", 1)
 	}
 }
