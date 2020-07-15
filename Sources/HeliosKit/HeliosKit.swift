@@ -4,7 +4,7 @@
 @_exported import JavaCoder
 @_exported import AnyCodable
 
-var AndroidPackage: String = ""
+public fileprivate(set) var AndroidPackage: String = ""
 
 public protocol Bootable {
 	static func boot(packageName: String, cachePath: String)
