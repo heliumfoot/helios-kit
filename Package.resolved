@@ -41,9 +41,9 @@
         "package": "JavaCoder",
         "repositoryURL": "https://github.com/readdle/swift-java-coder",
         "state": {
-          "branch": "dev/kotlin-support",
-          "revision": "e4b105dc830e59a116ec48216061b478aaefddff",
-          "version": null
+          "branch": null,
+          "revision": "065a7d03a5a77637ea5fc64ead050bbb93a9f8c3",
+          "version": "1.0.17"
         }
       }
     ]
