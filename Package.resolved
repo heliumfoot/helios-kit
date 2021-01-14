@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "java_swift",
+        "repositoryURL": "https://github.com/readdle/java_swift",
+        "state": {
+          "branch": null,
+          "revision": "30860b7664e0cffd11dbd15bc5e70952896207a2",
+          "version": "2.1.9"
+        }
+      },
+      {
         "package": "AnyCodable",
         "repositoryURL": "https://github.com/readdle/swift-anycodable.git",
         "state": {
