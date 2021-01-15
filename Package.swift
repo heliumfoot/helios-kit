@@ -16,7 +16,8 @@ let package = Package(
 //		.package(path: "../java_swift"),
 		.package(url: "https://github.com/readdle/swift-java", .upToNextMinor(from: "0.2.4")),
 //		.package(url: "https://github.com/readdle/swift-java-coder", .upToNextMinor(from: "1.0.17")),
-		.package(url: "https://github.com/readdle/swift-java-coder", .branch("dev/kotlin-support")),
+//		.package(url: "https://github.com/readdle/swift-java-coder", .branch("dev/kotlin-support")),
+		.package(path: "../swift-java-coder"),
 		.package(url: "https://github.com/readdle/swift-anycodable.git", .upToNextMinor(from: "1.0.3"))
 	],
 	targets: [
