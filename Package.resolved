@@ -39,11 +39,11 @@
       },
       {
         "package": "JavaCoder",
-        "repositoryURL": "https://github.com/readdle/swift-java-coder",
+        "repositoryURL": "https://github.com/heliumfoot/swift-java-coder",
         "state": {
-          "branch": null,
-          "revision": "065a7d03a5a77637ea5fc64ead050bbb93a9f8c3",
-          "version": "1.0.17"
+          "branch": "bugfix/support-double-decoding",
+          "revision": "e38d565fd1c7b90e5566b32f49e4d4408d25d2b7",
+          "version": null
         }
       }
     ]

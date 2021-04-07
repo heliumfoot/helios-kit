@@ -11,8 +11,10 @@ public protocol Bootable {
 }
 
 public extension Bootable {
-	public static func boot(packageName: String, cachePath: String) {
-		AndroidPackage = packageName
+	static func boot(packageName: String, cachePath: String) {
+		AndroidPackage = packageName.replacingOccurrences(of: ".", with: "/")
+		NSLog("[\(String(describing: self))] - Android Package = \(AndroidPackage)")
+		
 		setenv("TMPDIR", cachePath, 1)
 		// Required for SSL to work
 		setenv("URLSessionCertificateAuthorityInfoFile", cachePath + "/cacert.pem", 1)
