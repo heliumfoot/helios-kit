@@ -19,12 +19,11 @@ public extension Array where Element: Encodable {
 	}
 }
 
-public extension Dictionary {
+public extension Dictionary where Key: Decodable, Value: Decodable {
 
 		// Decoding SwiftValue type with JavaCoder
-		static func from<K, V>(javaObject: jobject) throws -> Dictionary<K, V> where K: Decodable, V: Decodable {
-				// ignore forPackage for basic impl
-				return try JavaDecoder(forPackage: AndroidPackage, missingFieldsStrategy: .throw).decode(Dictionary<K, V>.self, from: javaObject)
+		static func from(javaObject: jobject) throws -> Dictionary<Key, Value> {
+				return try JavaDecoder(forPackage: AndroidPackage, missingFieldsStrategy: .throw).decode(Self.self, from: javaObject)
 		}
 
 }

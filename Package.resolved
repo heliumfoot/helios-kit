@@ -11,15 +11,6 @@
         }
       },
       {
-        "package": "java_swift",
-        "repositoryURL": "https://github.com/readdle/java_swift",
-        "state": {
-          "branch": null,
-          "revision": "30860b7664e0cffd11dbd15bc5e70952896207a2",
-          "version": "2.1.9"
-        }
-      },
-      {
         "package": "AnyCodable",
         "repositoryURL": "https://github.com/readdle/swift-anycodable.git",
         "state": {
@@ -41,9 +32,9 @@
         "package": "JavaCoder",
         "repositoryURL": "https://github.com/heliumfoot/swift-java-coder",
         "state": {
-          "branch": null,
-          "revision": "fa4beba1803d97e788e43f4eae10cc8076532fbb",
-          "version": "1.0.18"
+          "branch": "dev/kotlin-support",
+          "revision": "366a6a7a291fe012ba8ed7815e2388c90a85a973",
+          "version": null
         }
       }
     ]
