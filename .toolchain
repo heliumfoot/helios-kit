@@ -1,2 +1,19 @@
-export TOOLCHAINS=org.swift.50320190830a
+NDK=21e
+SWIFT_TOOLCHAIN=swift-5.4.2
+export ANDROID_NDK_HOME=$HOME/.android-SWIFT_ANDROID_HOME/android-ndk-r$NDK
+# Stranger things
+export NDK_ROOT=$ANDROID_NDK_HOME
+export ANDROID_NDK=$ANDROID_NDK_HOME
+export ANDROID_NDK_ROOT=$ANDROID_NDK_HOME
 
+# Uncomment if you install Android Studio
+export ANDROID_HOME=$HOME/Library/Android/sdk
+
+export SWIFT_ANDROID_HOME=$HOME/.android-swift/swift-android-current
+
+export PATH=/Library/Developer/Toolchains/$SWIFT_TOOLCHAIN-RELEASE.xctoolchain/usr/bin:"${PATH}"
+export PATH=$ANDROID_NDK_HOME:$PATH
+export PATH=$SWIFT_ANDROID_HOME/bin:$SWIFT_ANDROID_HOME/build-tools/current:$PATH
+
+unset NDK
+unset SWIFT_TOOLCHAIN

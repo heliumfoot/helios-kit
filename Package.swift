@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,13 +11,13 @@ let package = Package(
 			targets: ["HeliosKit"]),
 	],
 	dependencies: [
-		.package(url: "https://github.com/readdle/java_swift", .upToNextMinor(from: "2.1.9")),
+        .package(name: "java_swift", url: "https://github.com/readdle/java_swift", .upToNextMinor(from: "2.1.9")),
 //		.package(path: "../java_swift"),
-		.package(url: "https://github.com/readdle/swift-java", .upToNextMinor(from: "0.2.4")),
+        .package(name: "Java", url: "https://github.com/readdle/swift-java", .upToNextMinor(from: "0.2.4")),
 //		.package(path: "../swift-java"),
-		.package(url: "https://github.com/heliumfoot/swift-java-coder", .upToNextMinor(from: "1.0.18")),
+        .package(name: "JavaCoder", url: "https://github.com/heliumfoot/swift-java-coder", from: "1.0.19"),
 //		.package(path: "../swift-java-coder"),
-		.package(url: "https://github.com/readdle/swift-anycodable.git", .upToNextMinor(from: "1.0.3"))
+        .package(name: "AnyCodable", url: "https://github.com/readdle/swift-anycodable.git", .upToNextMinor(from: "1.0.3"))
 	],
 	targets: [
 		.target(
