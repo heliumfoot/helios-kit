@@ -19,4 +19,11 @@ public extension Bootable {
 		// Required for SSL to work
 		setenv("URLSessionCertificateAuthorityInfoFile", cachePath + "/cacert.pem", 1)
 	}
+	
+	static func printDiagnostics() {
+		NSLog("""
+		[Main Bundle Path] = \(Bundle.main.bundlePath)
+		[AndroidPackage] = \(AndroidPackage)
+		""")
+	}
 }
