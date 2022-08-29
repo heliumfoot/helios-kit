@@ -37,3 +37,17 @@ public extension Dictionary where Key: Encodable, Value: Encodable {
 		}
 
 }
+
+extension Set where Element: Decodable {
+  // Decoding SwiftValue type with JavaCoder
+  public static func from(javaObject: jobject) throws -> Self {
+      return try JavaDecoder(forPackage: AndroidPackage, missingFieldsStrategy: .throw).decode(Self.self, from: javaObject)
+  }
+}
+
+extension Set where Element: Encodable {
+  public func javaObject() throws -> jobject {
+    // ignore forPackage for basic impl
+    return try JavaEncoder(forPackage: AndroidPackage, missingFieldsStrategy: .throw).encode(self)
+  }
+}
