@@ -1,5 +1,5 @@
-NDK=21e
-SWIFT_TOOLCHAIN=swift-5.4.2
+NDK=25c
+SWIFT_TOOLCHAIN=swift-5.7.3
 export ANDROID_NDK_HOME=$HOME/.android-SWIFT_ANDROID_HOME/android-ndk-r$NDK
 # Stranger things
 export NDK_ROOT=$ANDROID_NDK_HOME
