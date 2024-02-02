@@ -1,5 +1,5 @@
 @_exported import Foundation
-@_exported import CJavaVM
+@_exported import CAndroidNDK
 @_exported import Java
 @_exported import JavaCoder
 @_exported import AnyCodable
